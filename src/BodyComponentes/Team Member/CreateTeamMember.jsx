@@ -69,8 +69,8 @@ function CreateTeamMember() {
       }
   return (
     <div style={{width:'100%',display:'flex'}}>
-        <div style={{width:'20%'}}><Home/></div>
-        <div style={{paddingTop:'50px'}}>
+        <div><Home/></div>
+        <div style={{backgroundColor:'#F6F6F6',width:'100%'}}>
         <MDBContainer fluid>
 
 <MDBRow className='justify-content-center align-items-center m-5'>

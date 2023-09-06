@@ -31,8 +31,8 @@ function CustomerTable() {
     }
   return (
     <div style={{width:'100%',display:'flex'}}>
-        <div style={{width:'20%'}}><Home/></div>
-        <div style={{width:'100%',paddingTop:'50px',float:'left'}} >
+        <div><Home/></div>
+        <div style={{width:'100%',float:'left'}} >
         <Table striped bordered hover >
       <thead>
         <tr>

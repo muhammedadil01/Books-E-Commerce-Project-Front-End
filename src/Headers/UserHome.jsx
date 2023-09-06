@@ -13,7 +13,7 @@ import { newcontext } from './ContextProvaider';
 
 
 function UserHome() {
-    const [BooksData, setBooksData] = useState([])
+    const [booksData, setBooksData] = useState([])
    
     const {setfetchItem,fetchItem} = useContext(newcontext)
 
@@ -28,14 +28,11 @@ function UserHome() {
            })
     }, [])
   
-    
+  // const filteredArray = booksData.filter(book => book.Year == 2011)
   return (
     <div style={{display:"flex",overflowX:"auto",flexWrap:"nowrap",paddingTop:"59px"}}>
         {
-            
-            BooksData.map((item)=>(
-            
-               
+            booksData.map((item)=>(
                   <MDBCard style={{marginRight:"15px",width:"16rem"}}>  
                     <MDBCardBody>
                       <MDBCardTitle>Name:{item.Name}</MDBCardTitle>
@@ -50,7 +47,6 @@ function UserHome() {
                     <MDBBtn onClick={()=>setfetchItem(oldvalue=>[...oldvalue,item])}  >Add to  Cart</MDBBtn>
                     </MDBCardFooter>
                   </MDBCard>  
-             
             ))
              
         }

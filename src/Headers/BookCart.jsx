@@ -68,7 +68,6 @@ function BookCart() {
                         <p className="lead fw-normal mb-2">Author: {item.Author}</p>
                         <p>
                           <span className="text-muted">Publication: {item.Publication} </span>
-                          <span className="text-muted">Year: {item.Year} </span>
                           <span className="text-muted">Availablity: {item.Availablity} </span>
                         </p>
                       </MDBCol>
@@ -85,7 +84,7 @@ function BookCart() {
                       </MDBCol>
                       <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
                         <MDBTypography tag="h5" className="mb-0">
-                          $499.00
+                       Year : {item.Year}
                         </MDBTypography>
                       </MDBCol>
                       <MDBCol md="1" lg="1" xl="1" className="">

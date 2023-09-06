@@ -42,7 +42,6 @@ function Registerform() {
             localStorage.setItem("Admindata", JSON.stringify(frontdata.data))
 
         }catch(error){
-          
             console.log("could'nt signup", error);
         }
 

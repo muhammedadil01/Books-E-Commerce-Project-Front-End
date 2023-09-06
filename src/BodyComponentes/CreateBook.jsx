@@ -54,11 +54,11 @@ function CreateBook() {
     }
   return (
     <div style={{display:'flex',width:'100%'}}>
-        <div style={{width:'20%'}}>
+        <div>
            <Home/>
         </div>
-        <div style={{width:'100%',paddingTop:'54px',float:'left'}}>
-        <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundImage: 'url(https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)'}}>
+        <div style={{width:'100%',float:'left'}}>
+        <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{backgroundColor:'#F6F6F6'}}>
       <div className='mask gradient-custom-3'></div>
       <MDBCard className='m-5' style={{maxWidth: '600px'}}>
         <MDBCardBody className='px-5'>

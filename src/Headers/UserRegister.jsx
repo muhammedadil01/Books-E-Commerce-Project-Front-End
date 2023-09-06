@@ -11,8 +11,11 @@ import {
   }
   from 'mdb-react-ui-kit';
   import axios from "axios"
+  import {useNavigate} from "react-router-dom"
+  
 
 function UserRegister(){
+  const navigate = useNavigate()
     const [FirstName, setFirstName] = useState("")
     const [SecondName, setSecondName] = useState("")
     const [Email, setEmail] = useState("")
@@ -40,6 +43,7 @@ function UserRegister(){
             const userdata= await axios.post("http://localhost:5000/register",{FirstName,SecondName,Email,Password},config)
             console.log(userdata.data);
             localStorage.setItem("userdata", JSON.stringify(userdata.data))
+            navigate("/userlogin")
 
         }catch(error){
           

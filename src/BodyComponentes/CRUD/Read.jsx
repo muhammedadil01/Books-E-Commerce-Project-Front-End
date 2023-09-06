@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Home from '../../Headers/Home'
-import {
-    MDBCard,
-    MDBCardImage,
-    MDBCardBody,
-    MDBCardTitle,
-    MDBListGroup,
-    MDBListGroupItem
-  } from 'mdb-react-ui-kit';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import './Read.css'
 
 function Read() {
 
@@ -27,24 +20,39 @@ function Read() {
     
   return (
     <div style={{display:'flex',width:'100%'}}>
-        <div style={{width:'20%'}}><Home/></div>
-
-        <div style={{paddingTop:'130px'}} className='col d-flex justify-content-center'>
-        <MDBCard style={{width:'25rem',height:'50px',objectFit:'cover'}}>
-      <MDBCardImage position='top' alt='...' src='https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1198&q=80' />
-      <MDBCardBody>
-        <MDBCardTitle >{GetData.Name}</MDBCardTitle>
-      </MDBCardBody>
-      <MDBListGroup flush>
-        <MDBListGroupItem>Author : {GetData.Author} </MDBListGroupItem>
-        <MDBListGroupItem>Publication : {GetData.Publication} </MDBListGroupItem>
-        <MDBListGroupItem>Year : {GetData.Year}</MDBListGroupItem>
-        <MDBListGroupItem>Availablity : {GetData.Availablity}</MDBListGroupItem>
-      </MDBListGroup>
-      <MDBCardBody>
-      </MDBCardBody>
-    </MDBCard>
+        <div><Home/></div>
+       
+       <div style={{width:'100%'}}>
+       <div className="client-view-container">
+      <div className="client-info">
+        <h1 className="info-heading">Book Information</h1>
+        <div className="info-item">
+          <label className="info-label">Name:</label>
+          <p className="info-text">{GetData.Name}</p>
         </div>
+        <div className="info-item">
+          <label className="info-label">Author:</label>
+          <p className="info-text">{GetData.Author}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Publication:</label>
+          <p className="info-text">{GetData.Publication}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Year:</label>
+          <p className='info-tex'>
+          {GetData.Year}
+          </p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Availablity:</label>
+          <p className="info-text">{GetData.Availablity}</p>
+        </div>
+        
+      </div>
+    </div>
+       </div>
+        
         
     </div>
   )

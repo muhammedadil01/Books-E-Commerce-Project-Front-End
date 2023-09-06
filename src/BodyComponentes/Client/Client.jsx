@@ -38,8 +38,8 @@ function Client() {
   
   return (
     <div style={{width:'100%',display:'flex'}} >
-      <div style={{width:'20%'}}><Home/></div>
-      <div style={{width:'80%',float:'left',paddingTop:'54px'} }>
+      <div><Home/></div>
+      <div style={{width:'100%',float:'left'} }>
       <Table striped bordered hover >
       <thead>
         <tr>

@@ -100,8 +100,8 @@ function OrderCreate() {
   }
   
   return (
-    <div style={{width:'100%',display:'flex',backgroundColor:'#ede4e4'}}>
-        <div style={{width:'20%'}}><Home/></div>
+    <div style={{width:'100%',display:'flex',backgroundColor:'#F6F6F6'}}>
+        <div><Home/></div>
         <div style={{marginLeft:'auto',marginRight:'auto',paddingTop:'30px'}}>
         <MDBContainer fluid className='h-custom ' >
 
@@ -164,13 +164,13 @@ function OrderCreate() {
             <MDBInput wrapperClass='mb-4'  label='Street + Nr' size='lg' id='form5' type='text' onChange={street}/>
             <MDBInput wrapperClass='mb-4'  label='Additional Information' size='lg' id='form6' type='text' onChange={additionalinfor}/>
 
-            <MDBRow>
+           
 
               <MDBCol md='7'>
                 <MDBInput wrapperClass='mb-4'  label='Place' size='lg' id='form7' type='text' onChange={place}/>
               </MDBCol>
 
-            </MDBRow>
+            
             <MDBRow>
             <MDBCol md='5'>
                <MDBInput wrapperClass='mb-4'  label=' Pin Code' size='lg' id='form9' type='number' onChange={pincode}/>
@@ -190,11 +190,12 @@ function OrderCreate() {
                   }
                  </Form.Select>
              </Form.Group>
-           <MDBCol>
-           <MDBCheckbox name='flexCheck' id='flexCheckDefault' wrapperClass='mb-4'  label='I do accept the Terms and Conditions of your site.' />
-            <MDBBtn  size='sm' onClick={()=>orderSubmit()}>Create Order</MDBBtn>
-           </MDBCol>
-
+             <div style={{paddingTop:'20px'}}>
+             <MDBCol >
+             <MDBBtn  size='sm' onClick={()=>orderSubmit()}>Create Order</MDBBtn>
+            </MDBCol>
+             </div>
+             
           </MDBCol>
         </MDBRow>
 

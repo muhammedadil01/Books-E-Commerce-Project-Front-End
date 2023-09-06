@@ -52,8 +52,8 @@ const ClientSubmit =async()=>{
 }
   return (
     <div  style={{width:'100%',display:'flex'}}>
-        <div style={{width:'20%'}}><Home/></div>
-        <div style={{width:'100%',paddingTop:'50px',float:'left'}}>
+        <div><Home/></div>
+        <div style={{width:'100%',float:'left' ,backgroundColor:'#F6F6F6'}}>
         <Container>
         <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>

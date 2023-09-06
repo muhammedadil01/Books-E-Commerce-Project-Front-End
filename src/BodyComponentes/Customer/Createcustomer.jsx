@@ -80,8 +80,8 @@ function Createcustomer() {
   }
   return (
     <div style={{width:'100%',display:'flex'}}>
-        <div style={{width:'20%'}}><Home/></div>
-        <div style={{paddingTop:'50px'}}>
+        <div><Home/></div>
+        <div>
         <MDBContainer fluid className='bg-light'>
 
 <MDBRow className='d-flex justify-content-center align-items-center h-100'>

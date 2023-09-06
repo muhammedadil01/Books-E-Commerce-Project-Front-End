@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Home from '../../../Headers/Home'
-import Card from 'react-bootstrap/Card';
+import './CustomerRead.css'
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useEffect } from 'react';
@@ -18,28 +18,49 @@ function CustomerRead() {
    
   return (
     <div style={{display:'flex',width:'100%'}}>
-        <div style={{width:'20%'}}>
+        <div>
           <Home/>
         </div>
-        <div style={{marginLeft:'auto',marginRight:'auto',paddingTop:'90px'}}>
-       <Card style={{ width: '20rem' }}>
-      <Card.Img variant="top" style={{height:'15rem'}} src="https://t4.ftcdn.net/jpg/05/21/94/81/360_F_521948178_WUlWgu8X5k2TyHH5bDJDY1tRfJEvz4CN.jpg" />
-      <Card.Body>
-        <Card.Title>Name : {customerdata.Name} </Card.Title>
-        <Card.Text>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Email : {customerdata.Email} </li>
-            <li class="list-group-item">Address Line 1 : {customerdata.Address}</li>
-            <li class="list-group-item">Address Line 2 : {customerdata.Address1}</li>
-            <li class="list-group-item">City : {customerdata.City}</li>
-            <li class="list-group-item">State : {customerdata.State}</li>
-            <li class="list-group-item">Pincode : {customerdata.Pincode} </li>
-            <li class="list-group-item">Country : {customerdata.Country}</li>
-            
-        </ul>
-        </Card.Text>
-      </Card.Body>
-    </Card>
+        <div style={{width:'100%'}}>
+        <div className="client-view-container">
+      <div className="client-info">
+        <h1 className="info-heading">Customer Information</h1>
+        <div className="info-item">
+          <label className="info-label">Name:</label>
+          <p className="info-text">{customerdata.Name}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Email:</label>
+          <p className="info-text">{customerdata.Email}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Address Line 1:</label>
+          <p className="info-text">{customerdata.Address}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Address Line 1:</label>
+          <p className='info-tex'>
+          {customerdata.Address1}
+          </p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">City:</label>
+          <p className="info-text">{customerdata.City}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">State:</label>
+          <p className="info-text">{customerdata.State}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Pincode:</label>
+          <p className="info-text">{customerdata.Pincode}</p>
+        </div>
+        <div className="info-item">
+          <label className="info-label">Country:</label>
+          <p className="info-text">{customerdata.Country}</p>
+        </div>
+      </div>
+    </div>
         </div>
     </div>
   )

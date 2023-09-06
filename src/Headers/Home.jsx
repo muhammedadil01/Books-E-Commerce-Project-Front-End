@@ -16,12 +16,10 @@ function Home() {
 
   return (
    
-    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial', position:'sticky', top:'0', overflowY:'scroll',paddingTop:'54px' }}>
-    <CDBSidebar textColor="black" backgroundColor="#eeeee4" >
+    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial', position:'sticky', top:'0' }}>
+    <CDBSidebar textColor="black" backgroundColor="#E7E9EB" >
       <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-        <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-          Sidebar
-        </a>
+        
       </CDBSidebarHeader>
 
       <CDBSidebarContent className="sidebar-content">
