@@ -1,0 +1,81 @@
+.login-section{
+    background-color: #ff2b24; 
+    display: flex;
+    justify-content: space-between;
+   
+}
+.login-container{
+    display: flex; 
+   
+    color: #fff;
+   padding: 5px 10px;
+   font-size: 14px;
+   font-weight: 700;
+   align-self: flex-end;
+}
+.admin-register{
+    padding: 5px 20px;
+}
+.admin-login{
+    padding: 5px 20px;
+}
+.user-register{
+    padding: 5px 20px; 
+}
+.user-login{
+    padding: 5px 20px;  
+}
+/* a {
+    text-decoration: none; 
+    color: #fff; 
+  }
+  
+  
+  a:hover {
+    color: #fff; 
+  } */
+.link-title{
+    text-decoration: none; 
+    color: #fff; 
+  }
+  .link-title:hover{
+    color: #fff;
+  }
+.Email-section{
+    padding: 9px 5px;
+    font-weight: 700;  
+    
+}   
+.title-img{
+    height: 80px;
+}
+.header-section{
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+.search-box{
+    width: 600px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+   margin-top: 25px;
+   margin-left: 200px;
+}
+.search-input{
+   width: 556px;
+   height: 38px;
+   border: none;
+   border-radius: 20px;
+}
+input:focus{
+    outline: none;
+}
+.search-btn{
+   border: none;
+   border-radius: 23px;
+   
+}
+.cart-section{
+    margin-top: 32px; 
+    margin-left: 350px;
+}

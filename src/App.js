@@ -1,33 +1,34 @@
 
-import Headernav from './Headers/Headernav';
+import Headernav from './Componentes/clientComponent/Headernav';
 import {  Route, Routes } from "react-router-dom"
-import Registerform from './Headers/Registerform';
-import Loginform from './Headers/Loginform';
-import Home from './Headers/Home';
-import BookTable from './BodyComponentes/BookTable';
-import CreateBook from './BodyComponentes/CreateBook';
-import Read from './BodyComponentes/CRUD/Read';
-import Update from './BodyComponentes/CRUD/Update';
-import CreateClient from './BodyComponentes/Client/CreateClient';
-import Client from './BodyComponentes/Client/Client';
-import ClientRead from './BodyComponentes/Client/Client CRUD/ClientRead';
-import ClientUpdate from './BodyComponentes/Client/Client CRUD/ClientUpdate';
-import Createcustomer from './BodyComponentes/Customer/Createcustomer';
-import CustomerTable from './BodyComponentes/Customer/CustomerTable';
-import CustomerRead from './BodyComponentes/Customer/Customer CRUD/CustomerRead';
-import CustomerUpdate from './BodyComponentes/Customer/Customer CRUD/CustomerUpdate';
-import CreateTeamMember from './BodyComponentes/Team Member/CreateTeamMember';
-import TeamMemberTable from './BodyComponentes/Team Member/TeamMemberTable';
-import TeamMemberRead from './BodyComponentes/Team Member/TeamMember CRUD/TeamMemberRead';
-import TeamMemberUpdate from './BodyComponentes/Team Member/TeamMember CRUD/TeamMemberUpdate';
-import OrderCreate from './BodyComponentes/Order/OrderCreate';
-import OrderTable from './BodyComponentes/Order/OrderTable';
-import OrderRead from './BodyComponentes/Order/Order CRUD/OrderRead';
-import OrderUpdate from './BodyComponentes/Order/Order CRUD/OrderUpdate';
-import UserRegister from './Headers/UserRegister';
-import UserLogin from './Headers/UserLogin';
-import UserHome from './Headers/UserHome';
-import BookCart from './Headers/BookCart';
+import Registerform from './Componentes/authenticationComponents/adminAuthentication/Registerform';
+import Loginform from './Componentes/authenticationComponents/adminAuthentication/Loginform';
+import Home from './Componentes/clientComponent/Home';
+import BookTable from './Componentes/adminComponents/Books/BookTable';
+import CreateBook from './Componentes/adminComponents/Books/CreateBook';
+import BookRead from './Componentes/adminComponents/Books/BooksRead';
+import CreateClient from './Componentes/adminComponents/clientSection/CreateClient';
+import Client from './Componentes/adminComponents/clientSection/Client';
+import ClientRead from './Componentes/adminComponents/clientSection/ClientRead';
+import ClientUpdate from './Componentes/adminComponents/clientSection/ClientUpdate';
+import Createcustomer from './Componentes/adminComponents/customerSection/Createcustomer';
+import CustomerTable from './Componentes/adminComponents/customerSection/CustomerTable';
+import CustomerRead from './Componentes/adminComponents/customerSection/CustomerRead';
+import CustomerUpdate from './Componentes/adminComponents/customerSection/CustomerUpdate';
+import CreateTeamMember from './Componentes/adminComponents/teamMemberSection/CreateTeamMember';
+import TeamMemberTable from './Componentes/adminComponents/teamMemberSection/TeamMemberTable';
+import TeamMemberRead from './Componentes/adminComponents/teamMemberSection/TeamMemberRead';
+import TeamMemberUpdate from './Componentes/adminComponents/teamMemberSection/TeamMemberUpdate';
+import OrderCreate from './Componentes/adminComponents/orderSection/OrderCreate';
+import OrderTable from './Componentes/adminComponents/orderSection/OrderTable';
+import OrderRead from './Componentes/adminComponents/orderSection/OrderRead';
+import OrderUpdate from './Componentes/adminComponents/orderSection/OrderUpdate';
+import UserRegister from './Componentes/authenticationComponents/clientAuthentication/UserRegister';
+import UserLogin from './Componentes/authenticationComponents/clientAuthentication/UserLogin';
+import UserHome from './Componentes/clientComponent/UserHome';
+import BookCart from './Componentes/clientComponent/BookCart';
+import BookUpdate from './Componentes/adminComponents/Books/BooksUpdate';
+
 
 function App() {
 
@@ -45,8 +46,8 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/booktable' element={<BookTable/>}/>
         <Route path='/createbook' element={<CreateBook/>}/>
-        <Route path='/read/:id' element={<Read/>}/>
-        <Route path='/update/:id' element={<Update/>}/>
+        <Route path='/read/:id' element={<BookRead/>}/>
+        <Route path='/update/:id' element={<BookUpdate/>}/>
         <Route path='/createclient' element={<CreateClient/>}/>
         <Route path='/clienttable' element={<Client/>}/>
         <Route path='/clientread/:id' element={<ClientRead/>}/>
